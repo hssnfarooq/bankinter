@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/1c1abac6d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <title>Bankinter | Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="po">
+        <div class="nav-content">
+          <h1 class="logo"><a href="#">bankinter.</a></h1>
+          <div class="wrap">
+            <div class="dropdown left-float">
+              <a class="drop" href="javascript:void(0);"
+                >Particulars<span class="down-caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Broker</a></li>
+                <li><a href="#">Direct Line</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav-bar">
+          <ul class="list-1">
+            <li><a href="#">Accounts and Cards </a></li>
+            <li><a href="#" class="pad">Savings and Investments </a></li>
+            <li><a href="#" class="pad">Mortage and Loan </a></li>
+            <li><a href="#" class="pad">Insurance </a></li>
+            <li><a href="#" class="pad">Services </a></li>
+          </ul>
+          <ul class="list-2">
+            <li><a href="#" class="btn-1">Open your Account </a></li>
+            <li><a href="#" class="btn-2">Customer Acccess </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="form-container">
+        <form action="" id="form">
+          <h2>I'm Customer</h2>
+          <div class="form-control">
+            <div class="small">
+              The username or password is invalid. Enter them again the way you
+              chose them, in uppercase or lowercase, and press Login.
+            </div>
+            <input type="text" placeholder="User" id="user" />
+          </div>
+          <div form-control>
+            <input type="password" placeholder="Password" id="password" />
+          </div>
+          <div class="form-link">
+            <a href="#"> Reactivate or request keys</a>
+          </div>
+          <a href="./form2.html" type="submit" class="btn-submit" id="btn"
+            >Log in</a
+          >
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <h1 class="footer-logo"><a href="#">bankinter.</a></h1>
+        <div class="footer-content-1">
+          <ul class="footer-list-1">
+            <li>
+              <a href="#"
+                >Corporate Web <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >Real state portal <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >Non residents <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </li>
+          </ul>
+          <ul class="footer-list-2">
+            <li>
+              <a href="#"
+                >Private Baning <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >Personal banking <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >Private banking <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </li>
+          </ul>
+          <div class="footer-about">
+            <h4>About Baninter</h4>
+            <p>
+              50 years of experience in the Spanish industry with organic and
+              efficient growth. A history of success, growth and value creation
+              through differentiation and driven by development in Innovation
+              and Technology.
+            </p>
+          </div>
+        </div>
+        <div class="footer-content-2">
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Offices and Cashiers</a></li>
+            <li><a href="#">Innovation Foundation</a></li>
+            <li><a href="#">Ads And Rates</a></li>
+            <li><a href="#">Security and Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Legal Warning</a></li>
+            <li><a href="#">Accessbility</a></li>
+            <li><a href="#">Web Maps</a></li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="last-content">
+          <p>&copy; BANKINTER SA ALL RIGHTS RESERVED</p>
+          <div class="social-icon">
+            <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+            <a href="#"> <i class="fab fa-twitter"></i> </a>
+            <a href="#"> <i class="fab fa-youtube"></i> </a>
+            <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+            <a href="#"><i class="fas fa-blog"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $('.dropdown').click(function (e) {
+          $(this).find('.dropdown-menu').toggleClass('open');
+          $($(e.target).find('.down-caret').toggleClass('open-caret'));
+          e.preventDefault();
+          e.stopPropagation();
+          $(document).click(function () {
+            $('.dropdown-menu').removeClass('open');
+            $('.down-caret').removeClass('open-caret');
+          });
+        });
+      });
+    </script>
+    <script src="./page1validation.js"></script>
+  </body>
+</html>
